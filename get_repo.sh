@@ -28,14 +28,14 @@ echo "Cloning void ${VOID_BRANCH}..."
 mkdir -p vscode
 cd vscode || { echo "'vscode' dir not found"; exit 1; }
 
-git config --global url."https://andai-org:${GH_RO_PAT}@github.com/".insteadOf "https://github.com/"
+#git config --global url."https://andai-org:${GH_RO_PAT}@github.com/".insteadOf "https://github.com/"
 
 # git init -q
-# git remote add origin https://github.com/andai-org/andai-editor.git
-git config --global user.name "CI Builder"
-git config --global user.email "schoudhary@andaiplatforms.com"
+git remote add origin https://github.com/andai-org/andai-editor.git
+git config --global user.name "animesh-mondal-29"
+git config --global user.email "anibppimt@gmail.com"
 # git config --global http.https://github.com/.extraheader "AUTHORIZATION: basic $(echo -n :$GH_RO_PAT | base64)"
-git clone https://github.com/andai-org/andai-editor.git .
+git clone https://github.com/animesh-mondal-29/codgen.git .
 
 # Allow callers to specify a particular commit to checkout via the
 # environment variable VOID_COMMIT.  We still default to the tip of the
