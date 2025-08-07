@@ -58,7 +58,7 @@ jobs:
       - name: Switch to relevant branch
         env:
           PULL_REQUEST_ID: ${{ github.event.inputs.checkout_pr }}
-        run: ./get_pr.sh
+        run: chmod +x ./get_pr.sh
 
       - name: Clone VSCode repo
         env: # Void added this
