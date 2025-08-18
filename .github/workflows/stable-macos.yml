@@ -60,7 +60,7 @@ jobs:
             vscode_arch: arm64
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ env.GITHUB_BRANCH }}
 
@@ -87,7 +87,7 @@ jobs:
         if: env.VSCODE_ARCH == 'x64'
 
       # - name: Checkout Private Repository
-      #   uses: actions/checkout@v4
+      #   uses: actions/checkout@v5
       #   with:
       #     repository: andai-org/andai-editor.git
       #     token: ${{ secrets.GH_RO_PAT }}
